@@ -6,15 +6,61 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <style>
-    h1 { color: #e4240f; }
+    h1 { 
+      color: #e4240f; 
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .box {
+      width: 500px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #ffffff;
+        color: #333;
+      }
+      .box {
+        background-color: #f5f5f5;
+        color: #333;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #eee;
+      }
+      .box {
+        background-color: #1e1e1e;
+        color: #eee;
+        border: 1px solid #444;
+      }
+    }
   </style>
 </head>
 <body>
-  <center>
+  <div class="box">
+    <center>
   <h1>404 - Page Not Found</h1>
   <p>Sorry, we couldn't find the page you were looking for.<br>
   The page may have been moved or deleted.</p>
   <p><a href="/">Back to Top</a></p>
   </center>
+  </div>
 </body>
 </html>
