@@ -1,3 +1,5 @@
 # YuuyaPad Home page
-This is the YuuyaPad Home page.<br>
-Currently it's just a placeholder, but it will be expanded further in the near future.
+This is the repository for the YuuyaPad homepage.<br>
+We plan to expand it further in the future.
+# About pull requests
+Pull requests will only be accepted if they improve the homepage; all other requests will be ignored.
